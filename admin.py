@@ -20,7 +20,7 @@ while True:
         else:
             sys.stdout.write("Enter command: ")
             message = sys.stdin.readline()
-            server.send(message)
+            server.send(message.encode('ascii'))
             sys.stdout.write("<You>")
             sys.stdout.write(message)
             sys.stdout.flush()
