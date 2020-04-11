@@ -18,7 +18,6 @@ while True:
             message = socks.recv(2048).decode('ascii')
             print (message)
         else:
-            sys.stdout.write("Enter command: ")
             message = sys.stdin.readline()
             server.send(message.encode('ascii'))
             sys.stdout.write("<You>")
