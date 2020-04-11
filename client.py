@@ -80,11 +80,4 @@ while True:
                 elif len(que) == 4: attack(que[1], int(que[2]), int(que[3]))
             if 'stop' in message:
                 stop()
-        else:
-            sys.stdout.write("Enter command: ")
-            message = sys.stdin.readline()
-            server.send(message)
-            sys.stdout.write("<You>")
-            sys.stdout.write(message)
-            sys.stdout.flush()
 server.close()
